@@ -22,7 +22,7 @@ $\mathbf g_j=E^S(\mathbf I(\mathcal G_j))$
 Transformer 编码器 $E^T$ 嵌入所有输入笔画，得到与序列中其它笔画有关的紧致码：  
 $\hat{\mathbf s}_i=E^T(\mathbf s_i)$  
 Transformer 解码器 $D^T$ 预测当前笔画分组的编码：  
-$\hat{\mathbf g}_ j=D^T(STR,\mathbf g_0,...,\mathbf g_{j-1};[\hat{\mathbf s}_i])$  
+$\hat{\mathbf g}_j=D^T(STR,\mathbf g_0,...,\mathbf g_{j-1};[\hat{\mathbf s}_i])$  
 
 笔画 $s_i$ 属于分组 $\mathcal G_j$ 的概率为：  
 $p^j_i=\sigma(\hat{\mathbf s}_i \cdot \hat{\mathbf g}_j)$  
