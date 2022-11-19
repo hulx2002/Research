@@ -26,7 +26,7 @@ $\hat{\mathbf g}_j=D^T(STR,\mathbf g_0,...,\mathbf g_{j-1};\left[\hat{\mathbf s}
 
 笔画 $s_i$ 属于分组 $\mathcal G_j$ 的概率为：  
 $p^j_i=\sigma(\hat{\mathbf s}_i \cdot \hat{\mathbf g}_j)$  
-其中 $\sigma(\cdot)$ 为 sigmoid 激活函数，$p^j_i>0.5$ 应该被选择  
+其中 $\sigma(\cdot)$ 为 sigmoid 激活函数，$p^k_i>0.5$ 应该被选择  
 
 训练分组 Transformer：  
 最小化二元交叉熵损失函数 $\sum_{\mathcal G_j} \sum_{s_i} (\mathbb I_{s_i \in \mathcal G_j})log(p^j_i)+(1-\mathbb I_{s_i \in \mathcal G_j})log(1-p^j_i)$  
